@@ -24,8 +24,9 @@ class ZDBCLIENT:
                 data = ''
                 items = response.split('\r\n')
                 for item in items:
-                    if item[0] not in ['-', '+', ':', '$', '*']:
-                        data += '{} '.format(item)
+                    if item:
+                        if item[0] not in ['-', '+', ':', '$', '*']:
+                            data += '{} '.format(item)
                 return data[:-1]
             else:
                 # TODO

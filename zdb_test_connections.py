@@ -1,4 +1,4 @@
-from zdb_client import ZDBCLIENT
+from zdb_client_redis import ZDBCLIENT
 
 zdb_servers = ["172.20.18.104:1026",
 "172.20.18.120:1025",
